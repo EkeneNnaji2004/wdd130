@@ -1,9 +1,8 @@
-/* Header: center logo and title vertically and horizontally */
+/* Header: logo left, title center, nav right */
 header {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
   align-items: center;
-  justify-content: center;
   padding: 1rem 2rem;
   background-color: #cbf50e;
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
@@ -11,28 +10,33 @@ header {
 
 /* Logo styling */
 header img {
+  grid-column: 1;
   width: 80px;
   height: auto;
-  margin: 0 auto 0.5rem auto;
-  display: block;
+  margin-right: 1rem;
 }
 
 /* Title styling */
 header h1 {
-  margin: 0 0 1rem 0;
+  grid-column: 2;
+  margin: 0;
   font-size: 2rem;
   color: #350bf1;
   text-align: center;
 }
 
 /* Nav styling */
+header nav {
+  grid-column: 3;
+}
+
 nav ul {
   display: flex;
   gap: 1.5rem;
   list-style: none;
   margin: 0;
   padding: 0;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
 nav a {
