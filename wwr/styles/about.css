@@ -58,7 +58,12 @@ nav a:hover {
   gap: 2rem;
   padding: 2rem;
   background-color: #1784e4;
-  color: #0e0d0df6;
+  color: #fff;
+}
+
+.history img {
+  width: 100%;
+  border-radius: 8px;
 }
 
 /* Adventures section layout */
@@ -72,14 +77,14 @@ nav a:hover {
 }
 
 .adventures figure {
-  flex: 1 1 1 1 1%;
+  flex: 1 1 18%;
   max-width: 200px;
   margin: 0;
   text-align: center;
 }
 
 .adventures img {
-  width: 50%;
+  width: 100%;
   height: auto;
   border-radius: 10px;
 }
@@ -97,7 +102,7 @@ footer {
   align-items: center;
   padding: 1rem 2rem;
   background-color: #350bf1;
-  color: #f8f3f3;
+  color: #fff;
 }
 
 footer .socialmedia {
@@ -115,4 +120,23 @@ footer .socialmedia img {
 
 footer .socialmedia img:hover {
   transform: scale(1.1);
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 700px) {
+  header {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    text-align: center;
+  }
+  header img, header h1, header nav {
+    grid-column: 1;
+  }
+  .history {
+    grid-template-columns: 1fr;
+  }
+  .adventures {
+    flex-direction: column;
+    align-items: center;
+  }
 }
