@@ -2,12 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="description" content="Contact White Water Rafting Co. for more details about our exciting rafting trips.">
-  <meta name="author" content="Your Name">
+  <meta name="description" content="Contact White Water Rafting Co. for reservations, questions, or suggestions. Find our address, phone, email, and a contact form.">
+  <meta name="author" content="Ekene Nnaji Ekwueme">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Us - White Water Rafting</title>
   <link rel="stylesheet" href="styles/rafting.css">
-  <!-- Google Fonts here -->
 </head>
 <body>
   <header>
@@ -28,7 +27,28 @@
       <h2>Our Location</h2>
       <p>123 Plateau State Jos south, Nigeria</p>
       <p>📞 Phone: (+234) 9161780329</p>
-      <p>✉ Email: contact@whitewater.com</p>
+      <p>✉ Email: <a href="mailto:contact@whitewater.com">contact@whitewater.com</a></p>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.0123456789!2d8.8901234!3d9.8965432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104d123456789abc%3A0xabcdef1234567890!2sJos%2C%20Nigeria!5e0!3m2!1sen!2sng!4v1620000000000!5m2!1sen!2sng"
+        width="100%" height="300" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <section>
+      <h2>Meet Our Team</h2>
+      <div class="employee-profiles">
+        <figure>
+          <img src="images/happy-client.jpg.jpg" alt="Jane Doe - Lead Guide">
+          <figcaption>Jane Doe<br><span>Lead Guide</span></figcaption>
+        </figure>
+        <figure>
+          <img src="images/adventure1.jpg.jpeg" alt="John Smith - Safety Officer">
+          <figcaption>John Smith<br><span>Safety Officer</span></figcaption>
+        </figure>
+        <figure>
+          <img src="images/adventure2.jpg.jpeg" alt="Emily Rivers - Reservation Specialist">
+          <figcaption>Emily Rivers<br><span>Reservation Specialist</span></figcaption>
+        </figure>
+      </div>
     </section>
 
     <section>
@@ -40,19 +60,23 @@
         <label for="email">Your Email:</label><br>
         <input type="email" id="email" name="email" required><br><br>
 
+        <fieldset>
+          <legend>Purpose of Message:</legend>
+          <label><input type="radio" name="purpose" value="General Inquiry" required> General Inquiry</label>
+          <label><input type="radio" name="purpose" value="Reservation Question"> Reservation Question</label>
+          <label><input type="radio" name="purpose" value="Website Suggestion"> Website Suggestion</label>
+        </fieldset><br>
+
         <label for="message">Your Message:</label><br>
         <textarea id="message" name="message" rows="5" required></textarea><br><br>
 
+        <label>
+          <input type="checkbox" name="subscribe">
+          Please subscribe me to the monthly newsletter
+        </label><br><br>
+
         <button type="submit">Send Message</button>
       </form>
-    </section>
-
-    <section>
-      <h2>Map</h2>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!..."
-        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
-      </iframe>
     </section>
   </main>
 
@@ -63,6 +87,7 @@
       <a href="#"><img src="images/twitter.png.webp" alt="Twitter"></a>
       <a href="#"><img src="images/instagram.png.webp" alt="Instagram"></a>
     </nav>
+    <p><a href="images/contact-wireframe.png" target="_blank">Contact Us Wireframe</a></p>
   </footer>
 </body>
 </html>
