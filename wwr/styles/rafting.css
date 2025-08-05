@@ -45,6 +45,113 @@ nav a:hover {
   color: #004d40;
 }
 
+/* HERO SECTION */
+.hero, .trips-hero {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  gap: 2rem;
+  background: #fff;
+  padding: 2rem;
+}
+.hero img, .trips-hero img {
+  width: 100%;
+  border-radius: 12px;
+}
+.hero h1, .trips-hero h1 {
+  font-size: 2.5rem;
+  color: #350bf1;
+  margin: 0;
+}
+.hero p, .trips-hero p {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* NEWSLETTER */
+.newsletter {
+  background: #f0e10c;
+  padding: 1rem;
+  text-align: center;
+  margin: 2rem 0;
+}
+.newsletter input[type="email"] {
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+.newsletter button {
+  padding: 0.5rem 1rem;
+  background: #350bf1;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+
+/* CTA BUTTON */
+.cta-button {
+  display: inline-block;
+  background: #350bf1;
+  color: #fff;
+  padding: 0.7rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 1rem;
+  transition: background 0.2s;
+}
+.cta-button:hover {
+  background: #2e7d32;
+}
+
+/* GRID INFO SECTION */
+.grid-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+.grid-info div {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.grid-info img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+/* TRIPS LIST */
+.trips-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+.trip-card {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.trip-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+.trip-card h3 {
+  margin: 0.5rem 0;
+  color: #350bf1;
+}
+.trip-card p {
+  color: #333;
+}
 /* HISTORY SECTION */
 .history {
   display: grid;
